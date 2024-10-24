@@ -4,7 +4,7 @@
 # Current version runs between specified hours
 # 2024-10-24
 #
-# Requires the module opencv-python OR opencv-contrib-python
+# Requires the module opencv-python  OR  opencv-contrib-python
 #    pip3 install opencv-contrib-python
 #
 # Be sure to change the Configuration Settings to match your needs
@@ -20,12 +20,12 @@ import cv2
 import numpy as np
 from datetime import datetime, time
 import os
-import time as time_module  # Added for sleep timer
+import time as time_module
 
 
 # Configuration Settings
 camera_index = 0           # Maybe change to 1 on OSX
-camera_exposure = -12      # (-4 for indoors, -12 or -11 for bright outdoors)
+camera_exposure = -4       # (-4 for indoors, -12 or -11 for bright outdoors)
 camera_width = 1280        # Camera resolution width
 camera_height = 960        # Camera resolution height
 start_time = time(12, 0)   # 12:00 PM
