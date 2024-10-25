@@ -1,7 +1,8 @@
-######################################################################
+##################################################################################
 # Use the webcam to watch for motion then record to an MP4 video
 # Continues recording an extra 3 seconds (to see if motion resumes)
 # Current version runs between specified hours
+# (Final Version)
 # 2024-10-24
 #
 # Requires the module opencv-python  OR  opencv-contrib-python
@@ -9,12 +10,17 @@
 #
 # Be sure to change the Configuration Settings to match your needs
 #
-# min_area changes the amount of motion needed to trigger detection
-#    500 pickes up branches moving gently in the breeze
-#   1500 catches some big cloud movement
-#   2000 maybe catches birds (the author's goal)
+# min_area = the minimal size area (width x height) needed to trigger detection 
+#   3000 = 55x55 pixels (roughly)
+#   4200 = 65x65
 #
-######################################################################
+# sensitivity = threshold for detecting changes between frames
+#    Lower  (~10) make the detector more sensitive to small changes
+#    Higher (~50) mean only more significant changes will be detected
+#
+# min_area and sensitivity are set near the top of the MotionDetector class
+#
+##################################################################################
 
 import cv2
 import numpy as np
