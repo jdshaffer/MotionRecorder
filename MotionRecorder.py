@@ -1,8 +1,8 @@
 ##################################################################################
-# Use the webcam to watch for motion then record to an MP4 video
+# Use the webcam to watch for motion then record to an MP4 video (Final Version)
 # Continues recording an extra 3 seconds (to see if motion resumes)
 # Current version runs between specified hours
-# (Final Version)
+# Code developed by Jeffrey D. Shaffer with assistance from Claude Sonnet
 # 2024-10-24
 #
 # Requires the module opencv-python  OR  opencv-contrib-python
